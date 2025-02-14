@@ -15,5 +15,7 @@ RUN git clone --no-checkout --depth=1 --filter=blob:none https://github.com/The-
 
 RUN rm -rf flow && \
     mv OpenROAD-flow-scripts/flow . && \
-    rm -rf OpenROAD-flow-scripts
+    rm -rf OpenROAD-flow-scripts && \
+    rm -rf flow/designs/*
+
     
