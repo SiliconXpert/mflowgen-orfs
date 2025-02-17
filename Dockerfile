@@ -60,6 +60,9 @@ ENV YOSYS_EXE=/orsf/oss-cad-suite/bin/yosys
 # Set working directory for build
 WORKDIR /OpenROAD-flow-scripts
 
+# Remove existing designs
+RUN rm -rf flow/designs/*
+
 
 
 # avoid issues with permissions
